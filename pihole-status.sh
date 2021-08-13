@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This script handles the output for the pihole-status-polybar module
+# This script handles the output for the pihole-polybar module
 # This script will only work if you have 'jq' and 'curl' installed on your system!
 # Feel free to modify this script to your needs!
 
@@ -57,15 +57,15 @@ case $outputType in
     ;;
 
   "blocklist")
-    currentOutput="blocking $(echo "$current" | jq ".domains_being_blocked" | tr '"' '\b') domains"
+    currentOutput="blocking $(echo "$current" | jq ".domains_being_blocked") domains"
     ;;
 
   "queries_today")
-    currentOutput="received $(echo "$current" | jq ".dns_queries_today" | tr '"' '\b') queries"
+    currentOutput="received $(echo "$current" | jq ".dns_queries_today") queries"
     ;;
 
   "blocked_queries")
-    currentOutput="blocked $(echo "$current" | jq ".ads_blocked_today" | tr '"' '\b') queries"
+    currentOutput="blocked $(echo "$current" | jq ".ads_blocked_today") queries"
     ;;
 
   *)
