@@ -16,5 +16,4 @@ exec = ~/yourFilePath
 interval = 120
 format = pihole:  <label>
 label-font = 1
-label-foreground = ${colors.colorActive}
 ```
