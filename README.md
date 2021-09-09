@@ -5,7 +5,8 @@ A module for polybar, which outputs various pihole status messages via API calls
 
 1. Paste the module code into your polybar configuration
 2. Place pihole-status.sh in a folder of your choice and copy the filepath
-3. Replace the placeholder filepath in the module code with your actual filepath to the script
+3. Make sure the script is executable!
+4. Replace the placeholder filepath in the module code with your actual filepath to the script
 
 ## Module
 
