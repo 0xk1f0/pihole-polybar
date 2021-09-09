@@ -18,3 +18,8 @@ interval = 120
 format = pihole:  <label>
 label-font = 1
 ```
+
+## Dependencies
+
+- jq
+- curl
